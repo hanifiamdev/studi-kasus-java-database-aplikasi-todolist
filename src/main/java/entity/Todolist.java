@@ -4,21 +4,21 @@ public class Todolist {
 
     private Integer id;
 
-    private String toodo;
+    private String todo;
 
     public Todolist() {
     }
 
     public Todolist(String toodo) {
-        this.toodo = toodo;
+        this.todo = toodo;
     }
 
-    public String getToodo() {
-        return toodo;
+    public String getTodo() {
+        return todo;
     }
 
     public void setTodo(String toodo) {
-        this.toodo = toodo;
+        this.todo = toodo;
     }
 
     public Integer getId() {

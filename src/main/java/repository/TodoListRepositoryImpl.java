@@ -45,7 +45,7 @@ public class TodoListRepositoryImpl implements TodoListRepository {
 
         try(Connection connection = dataSource.getConnection();
             PreparedStatement statement = connection.prepareStatement(sql)) {
-            statement.setString(1, todolist.getToodo());
+            statement.setString(1, todolist.getTodo());
             statement.executeUpdate();
 
         }catch (SQLException exception) {

@@ -7,8 +7,6 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import util.DatabaseUtil;
 
-import javax.sql.DataSource;
-
 public class TodolistRepositoryImplTest {
 
     private HikariDataSource dataSource;
@@ -36,6 +34,18 @@ public class TodolistRepositoryImplTest {
         System.out.println(todoListRepository.remove(2));
         System.out.println(todoListRepository.remove(3));
         System.out.println(todoListRepository.remove(4));
+    }
+
+    @Test
+    void testGetAll() {
+        todoListRepository.add(new Todolist("Hanif"));
+        todoListRepository.add(new Todolist("Fachri"));
+        todoListRepository.add(new Todolist("Orkhan"));
+
+        Todolist[] todolists = todoListRepository.getAll();
+        for(var todo : todolists) {
+            System.out.println(todo.getId() + " : " + todo.getTodo());
+        }
     }
 
     @AfterEach

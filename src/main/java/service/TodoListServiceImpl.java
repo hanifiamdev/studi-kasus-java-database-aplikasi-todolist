@@ -20,7 +20,7 @@ public class TodoListServiceImpl implements TodoListService {
             var no = i + 1;
 
             if (todolist != null) {
-                System.out.println(no + ". " + todolist.getToodo());
+                System.out.println(no + ". " + todolist.getTodo());
             }
 
         }
