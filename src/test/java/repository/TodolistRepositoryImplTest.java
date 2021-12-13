@@ -25,7 +25,7 @@ public class TodolistRepositoryImplTest {
     @Test
     void testAdd() {
         Todolist todolist = new Todolist();
-        todolist.setToodo("Hanif");
+        todolist.setTodo("Hanif");
         todoListRepository.add(todolist);
 
     }
