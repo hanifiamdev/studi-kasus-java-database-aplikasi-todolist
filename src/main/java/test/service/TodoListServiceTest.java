@@ -12,7 +12,7 @@ public class TodoListServiceTest {
     }
 
     public static void testShowTodoList() {
-
+/*
         TodoListRepositoryImpl todoListRepository = new TodoListRepositoryImpl();
         todoListRepository.data[0] = new Todolist("Belajar Java Dasar");
         todoListRepository.data[1] = new Todolist("Belajar Java OOP");
@@ -20,22 +20,22 @@ public class TodoListServiceTest {
 
         TodoListService todoListService = new TodoListServiceImpl(todoListRepository);
 
-        todoListService.showTodoList();
+        todoListService.showTodoList();*/
     }
 
     public static void testAddTodoList() {
-        TodoListRepository todoListRepository = new TodoListRepositoryImpl();
+  /*      TodoListRepository todoListRepository = new TodoListRepositoryImpl();
         TodoListService todoListService = new TodoListServiceImpl(todoListRepository);
         todoListService.addTodoList("Belajar Java Dasar");
         todoListService.addTodoList("Belajar Java OOP");
         todoListService.addTodoList("Belajar Java Standard Classses");
 
-        todoListService.showTodoList();
+        todoListService.showTodoList();*/
 
     }
 
     public static void testRemoveTodoList() {
-        TodoListRepository todoListRepository = new TodoListRepositoryImpl();
+/*        TodoListRepository todoListRepository = new TodoListRepositoryImpl();
         TodoListService todoListService = new TodoListServiceImpl(todoListRepository);
         todoListService.addTodoList("Belajar Java Dasar");
         todoListService.addTodoList("Belajar Java OOP");
@@ -51,7 +51,7 @@ public class TodoListServiceTest {
         todoListService.removeTodoList(2);
         todoListService.showTodoList();
         todoListService.removeTodoList(1);
-        todoListService.showTodoList();
+        todoListService.showTodoList();*/
 
     }
 }

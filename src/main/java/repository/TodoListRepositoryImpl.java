@@ -13,10 +13,11 @@ public class TodoListRepositoryImpl implements TodoListRepository {
 
     private DataSource dataSource;
 
-    public TodoListRepositoryImpl(Todolist[] data, DataSource dataSource) {
-        this.data = data;
+    public TodoListRepositoryImpl(DataSource dataSource) {
         this.dataSource = dataSource;
     }
+
+
 
     @Override
     public Todolist[] getAll() {
